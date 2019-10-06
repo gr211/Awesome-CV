@@ -1,125 +1,302 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\cvsection{Consulting}
+
+\newcommand*{\logo}[2]{\raisebox{-0.2em}{\includegraphics[height=1em]{#2}}\hspace{0.25em}#1}
+\newcommand*{\logoonly}[1]{\raisebox{-0.2em}{\includegraphics[height=1em]{#1}}}
 
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
-
-%---------------------------------------------------------
   \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
+    {Scala\,|\,java\,||\,go\,|\,data engineer}
+    {\logo{Disney streaming}{../../../images/disney.png}} % Organization
+    {Luxembourg} % Location
+    {October 2022 - present} % Date(s)
     {
+      Architectured a solution able to manage over 800 million users, ensuring seamless auto-scaling to accommodate 200k requests/second. Engineered Single Sign-On (SSO) authentication backend over openapi and smithy4s, leveraging http4s, and utilising Kinesis and DynamoDB streams for state management and materialised views creation. 
+      \newline
+      Developed a Pairwise Pseudonymous Identifiers (PPID) system utilising http4s and DynamoDB, enhancing user privacy through unique, opaque identifiers for third-party client-specific interactions.
     }
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
+    {Scala\,|\,java\,|\,data engineer}
+    {\logo{Depop}{../../../images/depop.jpg}} % Organization
+    {Luxembourg} % Location
+    {March 2022 - September 2022} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
-      \end{cvitems}
+       Engineered KSQL and Spark Streaming data pipelines, delivering enriched streaming and batch datasets with optimised sub 15-minute materialised views (Delta tables) for efficient OLAP queries utilising dbt, Spark, and Athena.
+    }
+
+%---------------------------------------------------------
+
+  \cventry
+    {Scala\,|\,java\,|\,data engineer}
+    {\logo{Zego}{../../../images/zego.jpg}} % Organization
+    {Luxembourg} % Location
+    {Nov 2021 - Aug 2022} % Date(s)
+    {
+     Engineered architecture integrating third-party vehicle and insurance data via REST APIs, gRPC, FTP, and WebSockets, leveraging Kinesis and Akka-Streams for ingress and egress data flows. Orchestrated CI/CD pipelines utilising Kubernetes, ArgoCD, and Buildkite to ensure deployment and scaling of microservices and stream processors.
+    }
+
+%---------------------------------------------------------
+
+  \cventry
+    {Scala\,|\,java\,|\,data engineer}
+    {\logo{Slice}{../../../images/slice.png}} % Organization
+    {Luxembourg} % Location
+    {Apr 2021 - Oct 2021} % Date(s)
+    {
+    Spearheaded migration to a high-throughput, stream-oriented data processing architecture, enhancing system scalability and performance. Provided expert guidance and led the development of robust stream processors on AWS and Confluent platforms. Engineered CI/CD pipelines for streaming data (Kafka Streams, Spark Streaming, ksqlDB) from Databricks to Confluent, ensuring seamless deployment and integration.
     }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
+    {Scala\,|\,java\,|\,data engineer}
+    {\logo{Compare The Market}{../../../images/ctm.png}} % Organization
+    {London} % Location
+    {Jan 2020 - Mar 2021} % Date(s)
     {
+    Designed the architecture and technical strategy for advanced streaming infrastructure, effectively engaging with Architecture Design Forums (ADF) and synchronising with key stakeholders. Defined and implemented timelines and workflows for the deployment of proposed technical solutions. Orchestrated CI/CD pipelines for streaming data flows utilising Kafka Streams, Akka Streams, and Spark Streaming on EMR, EC2, EKS, and MSK.
     }
 
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
 \end{cventries}
+
+\cvsection{Other clients}
+
+%\begin{table}[h]
+%	\centering
+%	\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lllll}
+%		{\entrytitlestyle{\logo{Depop}{../../../images/depop.jpg}}} & {\entrytitlestyle{\logo{Guardian}{../../../images/guardian.png}}} & {\entrytitlestyle{{\logoonly{../../../images/voa.png}}}} & {\entrytitlestyle{\logo{Sainsbury's}{../../../images/sainsburys.jpg}}} & {\entrytitlestyle{{\logo{Capco}{../../../images/capco.png}}}} \\[8pt]
+%		{\entrytitlestyle{{\logoonly{../../../images/newsuk.png}}}} & {\entrytitlestyle{HappyInc}} & {\entrytitlestyle{ {\logoonly{../../../images/sky.jpeg}}}} & {\entrytitlestyle{{\logoonly{../../../images/ho.png}}}} & {\entrytitlestyle{{\logo{DMC Digital}{../../../images/dealchecker.jpg}}}} \\[8pt]
+%		{\entrytitlestyle{{\logo{ITHR}{../../../images/ithr.jpg}}}} & {\entrytitlestyle{{\logo{TripAdvisor}{../../../images/tripadvisor.jpg}}}} & {\entrytitlestyle{{\logo{SixAndCo}{../../../images/sixandco.png}}}} & {\entrytitlestyle{{\logo{VoxMobili}{../../../images/voxmobili.png}}}} & {\entrytitlestyle{{\logo{Fullsix}{../../../images/fullsix.jpg}}}}
+%	\end{tabular*}
+%\end{table}
+
+ \begin{flushleft}
+{\entrytitlestyle{\logo{Depop}{../../../images/depop.jpg}}}
+$\sqbig$ 
+{\entrytitlestyle{\logo{Guardian}{../../../images/guardian.png}}}
+$\sqbig$
+{\entrytitlestyle{{\logoonly{../../../images/voa.png}}}}
+$\sqbig$ 
+{\entrytitlestyle{\logo{Sainsbury's}{../../../images/sainsburys.jpg}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logo{Capco}{../../../images/capco.png}}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logoonly{../../../images/newsuk.png}}}}
+$\sqbig$ 
+{\entrytitlestyle{HappyInc}}
+$\sqbig$
+{\entrytitlestyle{ {\logoonly{../../../images/sky.jpeg}}}}
+$\sqbig$
+{\entrytitlestyle{{\logoonly{../../../images/ho.png}}}}  
+$\sqbig$
+
+{\entrytitlestyle{{\logo{DMC Digital}{../../../images/dealchecker.jpg}}}}
+$\sqbig$
+{\entrytitlestyle{{\logo{ITHR}{../../../images/ithr.jpg}}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logo{TripAdvisor}{../../../images/tripadvisor.jpg}}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logo{SixAndCo}{../../../images/sixandco.png}}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logo{VoxMobili}{../../../images/voxmobili.png}}}}
+$\sqbig$ 
+{\entrytitlestyle{{\logo{Fullsix}{../../../images/fullsix.jpg}}}}
+
+\end{flushleft}
+%\cvsection{Consulting}
+
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala and data engineer} 
+%    {\logo{Depop}{../../../images/depop.jpg}} % Organization
+%    {London} % Location
+%    {June 2019 - Dec 2019} % Date(s)
+%    {}
+%      \begin{cvitems}
+%        \item{Designed streamed aws redshift and rabbitmq data ingestion pipelines with kinesis and akka-streams data processors. }
+%	\item{Coordinating and coaching for teams members around streaming data processes and technologies.}
+%	\item{Research and identification of opportunities (kafka streams, samza), developing proposals and recommendations.}
+%      \end{cvitems}     
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala and data engineer} 
+%    {\logo{The Guardian}{../../../images/guardian.png}} % Organization
+%    {London} % Location
+%    {Oct 2018 - May 2019} % Date(s)
+%    {}
+	%\begin{cvitems}
+	%	\item{Implementation of spark etl pipelines on aws emr, processing readers' revenue and subscriptions datasets.}
+	%	\item{Designed and built alternative streaming pipelines with aws msk (kafka), eks and kafka-streams. Training and coaching around streaming data pipelines and technologies.}
+	%	\item{Implemented in-memory data stream uploads using http4s and fs2 to converse with rest apis.}
+	%\end{cvitems}     
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala and data engineer} 
+%    {\logo{Sainsbury's}{../../../images/sainsburys.jpg}} % Organization
+%    {London} % Location
+%    {Dec 2017 - Sep 2018} % Date(s)
+%    {}
+      %\begin{cvitems}
+      %  \item{Replaced nectar cards batch-based data processing with streaming pipelines ingesting and processing data in 4 seconds or less.}
+%	\item{Architecture and deployment of kafka clusters (apache and cloudera), kms and kerberos.}
+	%\item{Design and implementation of kafka-streams, kafka-connect, and schema-registry etls on aws ecs. Data analytics using hive, spark and zeppelin.}
+	%\item{Implementation of pii and gdpr-compliant stream processors using data tokenisation and encryption.}
+  %    \end{cvitems}     
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala engineer} 
+%    {\logo{Home Office (HMPO \& IPT)}{../../../images/ho.png}} % Organization
+%    {London} % Location
+%    {June 2016 - Nov 2017} % Date(s)
+%    {}
+    %  \begin{cvitems}
+    %    \item{Development of HMPO's online passport renewals portal. Designed data ingestion processes.}
+%	\item{Implementation of resilient data transfer layers with akka-streams and akka-persistence on kubernetes.}
+	%\item{Api contract testing using swagger and gatling.}
+   %   \end{cvitems}     
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala engineer} 
+%    {\logo{HMRC (Valuation Office Agency)}{../../../images/voa.png}} % Organization
+%    {London} % Location
+%    {Nov 2015 - May 2016} % Date(s)
+%    {}
+    %  \begin{cvitems}
+    %    \item{Design and implementation of an akka wrapper around a legacy web application with akka-streams. Proposed design to stakeholders.}
+	%\item{Delivered a gds-compliant solution that turned a seldom-used service to a country-wide first-choice platform for council tax and business rates collections.}
+  %    \end{cvitems}     
+
+
+%---------------------------------------------------------
+%  \cventry
+%    {Scala engineer} 
+%    {\logo{Home Office (HMPO \& Border Force)}{../../../images/ho.png}} % Organization
+%    {London} % Location
+%    {Mars 2014 - Oct 2015} % Date(s)
+%    {}
+%      \begin{cvitems}
+%        \item{Design and implementation of a flight arrivals prediction engine. Developed resiliency and recovery procedures using akka and rabbitmq.}
+%	\item{Design and implementation of internal tools for case worker application management, written using play.}
+%      \end{cvitems}     
+    
+
+%---------------------------------------------------------
+%  \cventry
+%    {Full stack jee engineer} 
+%    {\logo{Capco}{../../../images/capco.png}} % Organization
+%    {London} % Location
+%    {Sep 2013 - Dec 2013} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Full stack jee/grails engineer} 
+%    {\logo{News UK (News International)}{../../../images/newsuk.png}} % Organization
+%    {London} % Location
+%    {Nov 2012 - June 2013} % Date(s)
+%     {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Full stack jee/grails engineer} 
+%    {\logo{HappyInc Ltd {\textit (now Blow Ltd)}}{../../../images/blowltd.jpg}} % Organization
+%    {London} % Location
+%    {July 2012 - Sep 2012} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Full stack jee/grails engineer} 
+%    {\logo{BSkyB (Sky Group)}{../../../images/sky.jpeg}} % Organization
+%    {London} % Location
+%    {Aug 2011 - June 2012} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Senior jee engineer} 
+%    {\logo{DMC Digital}{../../../images/dealchecker.jpg}} % Organization
+%    {London} % Location
+%    {Dec 2010 - July 2011} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Senior jee engineer} 
+%    {\logo{ITHR}{../../../images/ithr.jpg}} % Organization
+%    {London} % Location
+%    {Oct 2010 - Nov 2010} % Date(s)
+%    {}
+%---------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+%\cvsection{Permanent positions}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+%\begin{cventries}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Technical lead - full stack jee engineer} 
+%    {\logo{TripAdvisor}{../../../images/tripadvisor.jpg}} % Organization
+%    {London} % Location
+%    {June 2008 - Aug 2010} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Technical lead - full stack jee engineer} 
+%    {\logo{SixAndCo (Fullsix group)}{../../../images/sixandco.png}} % Organization
+%    {London} % Location
+%    {Dec 2006 - Apr 2008} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Java engineer} 
+%    {\logo{VoxMobili (Anéo)}{../../../images/voxmobili.png}} % Organization
+%    {Paris} % Location
+%    {Sep 2006 - Nov 2006} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Full stack java engineer} 
+%    {\logo{Fullsix}{../../../images/fullsix.jpg}} % Organization
+%    {London} % Location
+%    {Aug 2004 - June 2005} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Junior full stack java engineer} 
+%    {BoxNewMedia} % Organization
+%    {London} % Location
+%    {July 2003 - July 2004} % Date(s)
+%    {}
+
+%---------------------------------------------------------
+%  \cventry
+%    {Junior full stack java engineer} 
+%    {AVS Consulting} % Organization
+%    {London} % Location
+%    {Mar 2002 - July 2002} % Date(s)
+%    {}
+
+% \end{cventries}

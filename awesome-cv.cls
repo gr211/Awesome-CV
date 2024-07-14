@@ -679,6 +679,11 @@
       {}
       {\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}}
   \end{tabular*}%
+  \ifempty{#5#6}
+    {
+      \vspace{0.1em}
+    }
+    {}
 }
 
 % Define an environment for cvsubentry

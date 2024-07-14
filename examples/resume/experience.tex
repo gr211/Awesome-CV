@@ -16,11 +16,13 @@
     {\logo{Disney streaming}{../../../images/disney.png}} % Organization
     {Luxembourg} % Location
     {October 2022 - present} % Date(s)
-    {}
+    {dynamodb {} databricks {} http4s {} kinesis {} openid {}  open-telemetry {} rest {} sso {} terraform}
     {
-        Architectured a solution able to manage over 800 million users, ensuring seamless auto-scaling to accommodate 200k requests/second. Engineered Single Sign-On (SSO) authentication backend over openapi and smithy4s, leveraging http4s, and utilising Kinesis and DynamoDB streams for state management and materialised views creation.
-    \newline
-    Developed a Pairwise Pseudonymous Identifiers (PPID) system utilising http4s and DynamoDB, enhancing user privacy through unique, opaque identifiers for third-party client-specific interactions.
+        \begin{cvitems}
+            \item{Architectured a solution handling over 800 million users, scaling up to 250k requests per second.}
+            \item{Engineered a single sign-on (sso, openid) backend over openapi and smithy4s, and kinesis and dynamodb streams.}
+            \item{Developed a pairwise pseudonymous identifiers (ppid) system with http4s and dynamodb.}
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
@@ -29,9 +31,12 @@
     {\logo{Depop}{../../../images/depop.jpg}} % Organization
     {Luxembourg} % Location
     {March 2022 - September 2022} % Date(s)
-    {}
+    {aws {} databricks {} kafka-streams {} ksql {} spark\,streaming {} terraform}
     {
-        Engineered KSQL and Spark Streaming data pipelines, delivering enriched streaming and batch datasets with optimised sub 15-minute materialised views (Delta tables) for efficient OLAP queries utilising dbt, Spark, and Athena.
+        \begin{cvitems}
+            \item{Engineered ksql and spark streaming pipelines to produce enriched unified datasets.}
+            \item{Delivered materialised streamed datasets with sub-15-minute views (delta tables) for OLAP queries utilising dbt, spark, and athena.}
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
@@ -41,9 +46,12 @@
     {\logo{Zego}{../../../images/zego.jpg}} % Organization
     {Luxembourg} % Location
     {Nov 2021 - Aug 2022} % Date(s)
-    {}
+    {akka\,streams {} api {} grpc {} kinesis {} rest {} websockets {} terraform}
     {
-        Engineered architecture integrating third-party vehicle and insurance data via REST APIs, gRPC, FTP, and WebSockets, leveraging Kinesis and Akka-Streams for ingress and egress data flows. Orchestrated CI/CD pipelines utilising Kubernetes, ArgoCD, and Buildkite to ensure deployment and scaling of microservices and stream processors.
+        \begin{cvitems}
+            \item{Engineered architecture integrating third-party vehicle and insurance data over rest apis, grpc, ftp, and websockets, leveraging kinesis and akka-streams for data flows.}
+            \item{Orchestrated ci/cd pipelines with kubernetes, argocd, and buildkite for the deployment and scaling of microservices and stream processors.}
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
@@ -53,9 +61,13 @@
     {\logo{Slice}{../../../images/slice.png}} % Organization
     {Luxembourg} % Location
     {Apr 2021 - Oct 2021} % Date(s)
-    {}
+    {confluent {} databricks {} kafka-streams {} ksqldb {} spark streaming {} terraform}
     {
-        Spearheaded migration to a high-throughput, stream-oriented data processing architecture, enhancing system scalability and performance. Provided expert guidance and led the development of robust stream processors on AWS and Confluent platforms. Engineered CI/CD pipelines for streaming data (Kafka Streams, Spark Streaming, ksqlDB) from Databricks to Confluent, ensuring seamless deployment and integration.
+        \begin{cvitems}
+            \item{Spearheaded migration to a high-throughput, stream-oriented data processing architecture.}
+            \item{Provided guidance and led the development of stream processors on aws and confluent platforms.}
+            \item{Designed ci/cd pipelines for streaming data (kafka-streams, spark streaming, ksqldb) from databricks to confluent.}
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
@@ -64,14 +76,161 @@
     {\logo{Compare The Market}{../../../images/ctm.png}} % Organization
     {London} % Location
     {Jan 2020 - Mar 2021} % Date(s)
-    {}
+    {ec2 {} eks {} emr {} kafka\,streams {} mongodb {} msk {} terraform}
     {
-        Designed the architecture and technical strategy for advanced streaming infrastructure, effectively engaging with Architecture Design Forums (ADF) and synchronising with key stakeholders. Defined and implemented timelines and workflows for the deployment of proposed technical solutions. Orchestrated CI/CD pipelines for streaming data flows utilising Kafka Streams, Akka Streams, and Spark Streaming on EMR, EC2, EKS, and MSK.
+        \begin{cvitems}
+            \item{Designed the architecture and strategy for a streaming infrastructure, promoting it to architecture design forums (adf) and stakeholders.}
+            \item{Defined and implemented timelines and workflows for the deployment of proposed technical solutions.}
+            \item{Orchestrated ci/cd pipelines for streaming data flows over kafka-streams, akka-streams, and spark streaming on emr, ec2, eks, and msk.}
+        \end{cvitems}
     }
 
+%---------------------------------------------------------
+    \cventry
+    {Scala and data engineer}
+    {\logo{Depop}{../../../images/depop.jpg}} % Organization
+    {London} % Location
+    {June 2019 - Dec 2019} % Date(s)
+    { akka\,streams {} kinesis {} rabbitmq {} redshift {} terraform}
+    {
+        \begin{cvitems}
+            \item{Designed streamed aws redshift and rabbitmq data ingestion pipelines over kinesis and akka-streams data processors. }
+            \item{Coordinated and coached team members around streaming data processes and technologies.}
+            \item{Research and identification of opportunities (kafka streams, samza), developing proposals and recommendations.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Scala and data engineer}
+    {\logo{The Guardian}{../../../images/guardian.png}} % Organization
+    {London} % Location
+    {Oct 2018 - May 2019} % Date(s)
+    {cloudformation {} eks {} etl {} kafka-streams {} msk {} spark}
+    {
+        \begin{cvitems}
+            \item{Implementation of spark etl pipelines on aws emr, processing readers' revenue and subscription datasets.}
+            \item{Designed and built alternative streaming pipelines with msk, eks, and kafka-streams.}
+            \item{Implemented in-memory data stream uploads using http4s and fs2 to converse with rest apis.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Scala and data engineer}
+    {\logo{Sainsbury's}{../../../images/sainsburys.jpg}} % Organization
+    {London} % Location
+    {Dec 2017 - Sep 2018} % Date(s)
+    {cloudera {} hive {} kafka\,streams {} spark {} terraform}
+    {
+        \begin{cvitems}
+            \item{Replaced nectar cards batch-based data processing with streaming pipeline ingestion, processing data in 4 seconds or less.}
+            \item{Architecture and deployment of kafka clusters (apache and cloudera), kms and kerberos.}
+            \item{Design and implementation of kafka-streams, kafka-connect, and schema-registry etls on ecs. Data analytics using hive, spark and zeppelin.}
+            \item{Implementation of pii and gdpr-compliant stream processors using data tokenisation and encryption.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Scala engineer}
+    {\logo{Home Office (HMPO \& IPT)}{../../../images/ho.png}} % Organization
+    {London} % Location
+    {June 2016 - Nov 2017} % Date(s)
+    {akka-streams {} akka-persistence {} kubernetes}
+    {
+        \begin{cvitems}
+            \item{Development of HMPO's online passport renewal portal. Designed data ingestion processes.}
+            \item{Implementation of resilient data transfer layers with akka-streams and akka-persistence on kubernetes.}
+            \item{Api contract testing with swagger and gatling.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Scala engineer}
+    {\logo{HMRC (Valuation Office Agency)}{../../../images/voa.png}} % Organization
+    {London} % Location
+    {Nov 2015 - May 2016} % Date(s)
+    {akka-streams}
+    {
+        \begin{cvitems}
+            \item{Design and implementation of an akka wrapper around a legacy web application with akka-streams. Proposed design to stakeholders.}
+            \item{Delivered a government-compliant solution providing a country-wide first-choice platform for council tax and business rates collections.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Scala engineer}
+    {\logo{Home Office (HMPO \& Border Force)}{../../../images/ho.png}} % Organization
+    {London} % Location
+    {Mars 2014 - Oct 2015} % Date(s)
+    {akka {} play {} python {} rabbitmq}
+    {
+        \begin{cvitems}
+            \item{Developed a flight arrival prediction engine. Implemented resiliency and recovery procedures using akka and rabbitmq.}
+            \item{Designed and implemented internal tools for case worker application management using play.}
+        \end{cvitems}
+    }
+
+%---------------------------------------------------------
+    \cventry
+    {Full stack jee engineer}
+    {\logo{Capco}{../../../images/capco.png}} % Organization
+    {London} % Location
+    {Sep 2013 - Dec 2013} % Date(s)
+    {}
+    {}
+%    {\vspace{1em}}
+
+%---------------------------------------------------------
+    \cventry
+    {Full stack jee/grails engineer}
+    {\logo{News UK (News International)}{../../../images/newsuk.png}} % Organization
+    {London} % Location
+    {Nov 2012 - June 2013} % Date(s)
+    {}
+    {}
+
+%---------------------------------------------------------
+    \cventry
+    {Full stack jee/grails engineer}
+    {\logo{HappyInc Ltd {\textit (now Blow Ltd)}}{../../../images/blowltd.jpg}} % Organization
+    {London} % Location
+    {July 2012 - Sep 2012} % Date(s)
+    {}
+    {}
+
+%---------------------------------------------------------
+    \cventry
+    {Full stack jee/grails engineer}
+    {\logo{BSkyB (Sky Group)}{../../../images/sky.jpeg}} % Organization
+    {London} % Location
+    {Aug 2011 - June 2012} % Date(s)
+    {}
+    {}
+
+%---------------------------------------------------------
+    \cventry
+    {Senior jee engineer}
+    {\logo{DMC Digital}{../../../images/dealchecker.jpg}} % Organization
+    {London} % Location
+    {Dec 2010 - July 2011} % Date(s)
+    {}
+    {}
+
+%---------------------------------------------------------
+    \cventry
+    {Senior jee engineer}
+    {\logo{ITHR}{../../../images/ithr.jpg}} % Organization
+    {London} % Location
+    {Oct 2010 - Nov 2010} % Date(s)
+    {}
+    {}
 \end{cventries}
 
-\cvsection{Other clients}
+%\cvsection{Other clients}
 
 %\begin{table}[h]
 %	\centering
@@ -82,226 +241,105 @@
 %	\end{tabular*}
 %\end{table}
 
-\begin{flushleft}
-{\entrytitlestyle{\logo{Depop}{../../../images/depop.jpg}}}
-    $\sqbig$
-        {\entrytitlestyle{\logo{Guardian}{../../../images/guardian.png}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logoonly{../../../images/voa.png}}}}
-    $\sqbig$
-        {\entrytitlestyle{\logo{Sainsbury's}{../../../images/sainsburys.jpg}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{Capco}{../../../images/capco.png}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logoonly{../../../images/newsuk.png}}}}
-    $\sqbig$
-        {\entrytitlestyle{HappyInc}}
-    $\sqbig$
-        {\entrytitlestyle{ {\logoonly{../../../images/sky.jpeg}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logoonly{../../../images/ho.png}}}}
-    $\sqbig$
-
-        {\entrytitlestyle{{\logo{DMC Digital}{../../../images/dealchecker.jpg}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{ITHR}{../../../images/ithr.jpg}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{TripAdvisor}{../../../images/tripadvisor.jpg}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{SixAndCo}{../../../images/sixandco.png}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{VoxMobili}{../../../images/voxmobili.png}}}}
-    $\sqbig$
-        {\entrytitlestyle{{\logo{Fullsix}{../../../images/fullsix.jpg}}}}
-
-\end{flushleft}
+%\begin{flushleft}
+%{\entrytitlestyle{\logo{Depop}{../../../images/depop.jpg}}}
+%    $\sqbig$
+%        {\entrytitlestyle{\logo{Guardian}{../../../images/guardian.png}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logoonly{../../../images/voa.png}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{\logo{Sainsbury's}{../../../images/sainsburys.jpg}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{Capco}{../../../images/capco.png}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logoonly{../../../images/newsuk.png}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{HappyInc}}
+%    $\sqbig$
+%        {\entrytitlestyle{ {\logoonly{../../../images/sky.jpeg}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logoonly{../../../images/ho.png}}}}
+%    $\sqbig$
+%
+%        {\entrytitlestyle{{\logo{DMC Digital}{../../../images/dealchecker.jpg}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{ITHR}{../../../images/ithr.jpg}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{TripAdvisor}{../../../images/tripadvisor.jpg}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{SixAndCo}{../../../images/sixandco.png}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{VoxMobili}{../../../images/voxmobili.png}}}}
+%    $\sqbig$
+%        {\entrytitlestyle{{\logo{Fullsix}{../../../images/fullsix.jpg}}}}
+%
+%\end{flushleft}
 %\cvsection{Consulting}
 
 
-%---------------------------------------------------------
-%  \cventry
-%    {Scala and data engineer} 
-%    {\logo{Depop}{../../../images/depop.jpg}} % Organization
-%    {London} % Location
-%    {June 2019 - Dec 2019} % Date(s)
-%    {}
-%      \begin{cvitems}
-%        \item{Designed streamed aws redshift and rabbitmq data ingestion pipelines with kinesis and akka-streams data processors. }
-%	\item{Coordinating and coaching for teams members around streaming data processes and technologies.}
-%	\item{Research and identification of opportunities (kafka streams, samza), developing proposals and recommendations.}
-%      \end{cvitems}     
-
-%---------------------------------------------------------
-%  \cventry
-%    {Scala and data engineer} 
-%    {\logo{The Guardian}{../../../images/guardian.png}} % Organization
-%    {London} % Location
-%    {Oct 2018 - May 2019} % Date(s)
-%    {}
-%\begin{cvitems}
-%	\item{Implementation of spark etl pipelines on aws emr, processing readers' revenue and subscriptions datasets.}
-%	\item{Designed and built alternative streaming pipelines with aws msk (kafka), eks and kafka-streams. Training and coaching around streaming data pipelines and technologies.}
-%	\item{Implemented in-memory data stream uploads using http4s and fs2 to converse with rest apis.}
-%\end{cvitems}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Scala and data engineer} 
-%    {\logo{Sainsbury's}{../../../images/sainsburys.jpg}} % Organization
-%    {London} % Location
-%    {Dec 2017 - Sep 2018} % Date(s)
-%    {}
-%\begin{cvitems}
-%  \item{Replaced nectar cards batch-based data processing with streaming pipelines ingesting and processing data in 4 seconds or less.}
-%	\item{Architecture and deployment of kafka clusters (apache and cloudera), kms and kerberos.}
-%\item{Design and implementation of kafka-streams, kafka-connect, and schema-registry etls on aws ecs. Data analytics using hive, spark and zeppelin.}
-%\item{Implementation of pii and gdpr-compliant stream processors using data tokenisation and encryption.}
-%    \end{cvitems}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Scala engineer} 
-%    {\logo{Home Office (HMPO \& IPT)}{../../../images/ho.png}} % Organization
-%    {London} % Location
-%    {June 2016 - Nov 2017} % Date(s)
-%    {}
-%  \begin{cvitems}
-%    \item{Development of HMPO's online passport renewals portal. Designed data ingestion processes.}
-%	\item{Implementation of resilient data transfer layers with akka-streams and akka-persistence on kubernetes.}
-%\item{Api contract testing using swagger and gatling.}
-%   \end{cvitems}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Scala engineer} 
-%    {\logo{HMRC (Valuation Office Agency)}{../../../images/voa.png}} % Organization
-%    {London} % Location
-%    {Nov 2015 - May 2016} % Date(s)
-%    {}
-%  \begin{cvitems}
-%    \item{Design and implementation of an akka wrapper around a legacy web application with akka-streams. Proposed design to stakeholders.}
-%\item{Delivered a gds-compliant solution that turned a seldom-used service to a country-wide first-choice platform for council tax and business rates collections.}
-%    \end{cvitems}
-
-
-%---------------------------------------------------------
-%  \cventry
-%    {Scala engineer} 
-%    {\logo{Home Office (HMPO \& Border Force)}{../../../images/ho.png}} % Organization
-%    {London} % Location
-%    {Mars 2014 - Oct 2015} % Date(s)
-%    {}
-%      \begin{cvitems}
-%        \item{Design and implementation of a flight arrivals prediction engine. Developed resiliency and recovery procedures using akka and rabbitmq.}
-%	\item{Design and implementation of internal tools for case worker application management, written using play.}
-%      \end{cvitems}     
-
-
-%---------------------------------------------------------
-%  \cventry
-%    {Full stack jee engineer} 
-%    {\logo{Capco}{../../../images/capco.png}} % Organization
-%    {London} % Location
-%    {Sep 2013 - Dec 2013} % Date(s)
-%    {}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Full stack jee/grails engineer} 
-%    {\logo{News UK (News International)}{../../../images/newsuk.png}} % Organization
-%    {London} % Location
-%    {Nov 2012 - June 2013} % Date(s)
-%     {}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Full stack jee/grails engineer} 
-%    {\logo{HappyInc Ltd {\textit (now Blow Ltd)}}{../../../images/blowltd.jpg}} % Organization
-%    {London} % Location
-%    {July 2012 - Sep 2012} % Date(s)
-%    {}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Full stack jee/grails engineer} 
-%    {\logo{BSkyB (Sky Group)}{../../../images/sky.jpeg}} % Organization
-%    {London} % Location
-%    {Aug 2011 - June 2012} % Date(s)
-%    {}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Senior jee engineer} 
-%    {\logo{DMC Digital}{../../../images/dealchecker.jpg}} % Organization
-%    {London} % Location
-%    {Dec 2010 - July 2011} % Date(s)
-%    {}
-
-%---------------------------------------------------------
-%  \cventry
-%    {Senior jee engineer} 
-%    {\logo{ITHR}{../../../images/ithr.jpg}} % Organization
-%    {London} % Location
-%    {Oct 2010 - Nov 2010} % Date(s)
-%    {}
 %---------------------------------------------------------
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-%\cvsection{Permanent positions}
+\cvsection{Permanent positions}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
-%\begin{cventries}
+\begin{cventries}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Technical lead - full stack jee engineer} 
-%    {\logo{TripAdvisor}{../../../images/tripadvisor.jpg}} % Organization
-%    {London} % Location
-%    {June 2008 - Aug 2010} % Date(s)
-%    {}
+    \cventry
+    {Technical lead - full stack jee engineer}
+    {\logo{TripAdvisor}{../../../images/tripadvisor.jpg}} % Organization
+    {London} % Location
+    {June 2008 - Aug 2010} % Date(s)
+    {}
+    {}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Technical lead - full stack jee engineer} 
-%    {\logo{SixAndCo (Fullsix group)}{../../../images/sixandco.png}} % Organization
-%    {London} % Location
-%    {Dec 2006 - Apr 2008} % Date(s)
-%    {}
+    \cventry
+    {Technical lead - full stack jee engineer}
+    {\logo{SixAndCo (Fullsix group)}{../../../images/sixandco.png}} % Organization
+    {London} % Location
+    {Dec 2006 - Apr 2008} % Date(s)
+    {}
+    {}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Java engineer} 
-%    {\logo{VoxMobili (Anéo)}{../../../images/voxmobili.png}} % Organization
-%    {Paris} % Location
-%    {Sep 2006 - Nov 2006} % Date(s)
-%    {}
+    \cventry
+    {Java engineer}
+    {\logo{VoxMobili (Anéo)}{../../../images/voxmobili.png}} % Organization
+    {Paris} % Location
+    {Sep 2006 - Nov 2006} % Date(s)
+    {}
+    {}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Full stack java engineer} 
-%    {\logo{Fullsix}{../../../images/fullsix.jpg}} % Organization
-%    {London} % Location
-%    {Aug 2004 - June 2005} % Date(s)
-%    {}
+    \cventry
+    {Full stack java engineer}
+    {\logo{Fullsix}{../../../images/fullsix.jpg}} % Organization
+    {London} % Location
+    {Aug 2004 - June 2005} % Date(s)
+    {}
+    {}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Junior full stack java engineer} 
-%    {BoxNewMedia} % Organization
-%    {London} % Location
-%    {July 2003 - July 2004} % Date(s)
-%    {}
+    \cventry
+    {Junior full stack java engineer}
+    {BoxNewMedia} % Organization
+    {London} % Location
+    {July 2003 - July 2004} % Date(s)
+    {}
+    {}
 
 %---------------------------------------------------------
-%  \cventry
-%    {Junior full stack java engineer} 
-%    {AVS Consulting} % Organization
-%    {London} % Location
-%    {Mar 2002 - July 2002} % Date(s)
-%    {}
-
-% \end{cventries}
+    \cventry
+    {Junior full stack java engineer}
+    {AVS Consulting} % Organization
+    {London} % Location
+    {Mar 2002 - July 2002} % Da
+    {}
+    {}
+\end{cventries}

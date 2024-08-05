@@ -209,7 +209,8 @@
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
-\newcommand*{\highlight}[1]{{\fontsize{8pt}{1em}\textcolor{highlight}{\textit{#1}}}}
+%\newcommand*{\highlight}[1]{\linespread{0.6}\selectfont{\fontsize{18pt}{1em}\textcolor{highlight}{{#1}}}}
+\newcommand*{\highlight}[1]{\linespread{0.6}\selectfont{\fontsize{9pt}{1em}\bodyfontlight\color{darktext} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -675,7 +676,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4}}
     \ifempty{#5}
       {}
-      {\\\multicolumn{2}{L{\textwidth}}{\linespread{0.4}\selectfont\highlight{#5}}}
+      {\\\multicolumn{2}{L{\textwidth}}{\highlight{#5}}}
     \ifempty{#6}
       {}
       {\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}}

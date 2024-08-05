@@ -667,6 +667,7 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4}}
@@ -674,7 +675,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4}}
     \ifempty{#5}
       {}
-      {\\\multicolumn{2}{L{\textwidth}}{\highlight{#5}}}
+      {\\\multicolumn{2}{L{\textwidth}}{\linespread{0.4}\selectfont\highlight{#5}}}
     \ifempty{#6}
       {}
       {\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}}

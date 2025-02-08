@@ -796,7 +796,7 @@
   \end{singlespace}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
-    {\lettertitlestyle{\@lettertitle} \\}
+    {\lettertitlestyle{\@lettertitle}\vspace{1em}\\}
   \lettertextstyle{\@letteropening}
 }
 

@@ -44,6 +44,10 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand*\sq{\mathbin{\vcenter{\hbox{\rule{.3ex}{.3ex}}}}}
+\newcommand{\company}{Ministère de la Santé et de la Sécurité sociale}
+\newcommand{\positionname}{développeur Full Stack (réf. E00033585)}
+
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -53,7 +57,7 @@
 %\photo[circle,noedge,left]{./examples/profile}
 \name{Romain}{GALLET}
 \position{software architecture $\sq$ data engineering $\sq$ devops $\sq$ aws certified}
-\address{Bertrange, Luxembourg}
+\address{Luxembourg}
 
 \mobile{(+352) 661 54 72 73}
 \email{romain.gallet@gmail.com}
@@ -83,16 +87,16 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {CFL Multimodal}
-  {100 z.a.e. wolser w, 3437 dudelange}
+  {\company}
+  {Direction de la santé}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Candidature pour le poste d'analyste développeur/système d'information (req1140)}
+\lettertitle{Candidature pour le poste de \positionname}
 % How the letter is opened
-\letteropening{Madame, Monsieur,}
+\letteropening{Madame Dr Anne VERGISON,}
 % How the letter is closed
-\letterclosing{Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.}
+\letterclosing{Je vous prie d’agréer, Madame, l’expression de mes salutations distinguées.}
 % Any enclosures with the letter
 %\letterenclosure[Attached]{Curriculum Vitae}
 
@@ -120,19 +124,48 @@
 \begin{cvletter}
 
 %\lettersection{About Me}
-Je vous adresse ma candidature pour le poste d'analyste développeur/système d'information (req1140) au sein de votre entreprise. Un rôle qui me permettrait de mettre à profit mes 15 ans d’expérience dans le développement et la gestion de projets IT, ainsi que mes compétences en conception de solutions performantes et sécurisées. Après avoir pris connaissance de vos missions et du profil recherché, je suis convaincu que mon expertise technique et ma capacité à travailler en étroite collaboration avec des équipes pluridisciplinaires correspondent parfaitement à vos attentes.
 
-Au cours de mon parcours professionnel, j’ai eu l’occasion de participer à l’alignement de la stratégie IT avec les objectifs métiers, en collaborant étroitement avec des analystes fonctionnels, des forums d'architectes et des experts IT. J’ai conçu des solutions logicielles robustes et flexibles, en prenant en compte la sécurité dès la conception, et en utilisant des approches telles que SOA, API, systèmes distribués, ainsi que des frameworks de développement spécifiques.
+Je me permets de vous adresser ma candidature pour le poste de développeur full stack au sein du projet PHRESH . Fort de plus de 15 ans d'expérience en tant que consultant Big Data et architecte de solutions,
+je suis convaincu que mon expertise technique approfondie et ma capacité à concevoir des systèmes complexes seraient des atouts précieux pour votre projet.
 
-Mon expertise s’étend à la modélisation des processus fonctionnels et techniques, ainsi qu’à la rédaction de cahiers des charges qualitatifs afin de répondre aux besoins des utilisateurs. J'ai également développé et maintenu des solutions innovantes, tout en m’assurant de leur qualité à travers la validation des plans de test et ma participation active aux phases de tests.
+Mon parcours professionnel, notamment chez Disney Streaming où j'ai conçu des systèmes d'authentification capables de gérer plus de 800 millions d'utilisateurs, démontre ma capacité à développer des solutions
+robustes et hautement évolutives. Cette expérience s'aligne parfaitement avec les exigences techniques de SORMAS en matière de gestion de données sensibles et de systèmes de surveillance épidémiologique.
 
-De plus, mon expérience dans le développement (Java, Scala, Rust, Go, Python), l’administration de bases de données relationnelles (PostgreSQL, MySQL, MongoDB), des pub/subs (Kafka, Pulsar, AMQP, JMS), ma maîtrise des technologies telles que REST, SOAP, JSON, Protobuf et Avro, ainsi que des outils de gestion de projets Agile et Waterfall, me permettent de répondre aux défis techniques complexes. Ma connaissance des environnements cloud (AWS, GCP) et des pratiques DevOps (K8S, Terraform, CloudFormation) pour la gestion des micro-services et CI/CD viendra enrichir votre équipe.
+Mes compétences techniques correspondent précisément à vos besoins :
 
-Je suis également à l’aise avec les outils techniques en administration (firewall, DNS, certificats, IAM, SSO, MFA, etc.) et possède une solide maîtrise des systèmes d’exploitation (Solaris, Linux). En outre, ma maîtrise du français et de l’anglais, et mon esprit analytique, me permettent d’interagir avec des équipes internationales et d’animer des réunions avec efficacité.
+\begin{itemize}
+\setlength\itemsep{-0.8em}
+\item Maîtrise approfondie de Java et des technologies Java EE (EJB, JPA/Hibernate, JAXRS)
+\item Expertise en développement frontend avec HTML, CSS et JavaScript
+\item Expérience significative avec les bases de données relationnelles, notamment PostgreSQL
+\item Solide expérience en architecture REST et protocoles http/https
+\item Pratique quotidienne des environnements Unix et des technologies de conteneurisation (Docker)
+\item Expertise en déploiement et maintenance de serveurs d'applications Java
+\end{itemize}
 
-Votre entreprise et ses valeurs de coopération, d’ouverture, de respect et d’excellence correspondent parfaitement à ma philosophie professionnelle. Mon pragmatisme et ma capacité à travailler en équipe m’ont toujours permis de réussir dans des environnements collaboratifs et dynamiques. Je serais honoré de pouvoir contribuer à vos projets et d’apporter ma vision stratégique au sein de vos équipes IT.
+Mon expérience dans la gestion de données sensibles, notamment au Home Office britannique, m'a permis de développer une compréhension approfondie des enjeux de sécurité et de confidentialité des données. J'ai régulièrement mis en œuvre des solutions conformes au RGPD et aux standards de sécurité les plus stricts.
 
-Je me tiens à votre disposition pour un entretien afin de discuter de ma candidature et de l'opportunité de rejoindre votre entreprise.
+Je suis particulièrement intéressé par les aspects suivants du poste :
+
+
+\begin{itemize}
+\setlength\itemsep{-0.8em}
+\item L'intégration de systèmes complexes et l'automatisation des flux de données
+\item La mise en place d'architectures évolutives pour la gestion des épidémies
+\item Le développement d'interfaces utilisateur intuitives pour les professionnels de santé
+\item L'implémentation de mécanismes de partage de données sécurisés entre différents secteurs
+\end{itemize}
+
+Ma certification AWS et mon expérience en conception de systèmes hautement disponibles me permettront d'aborder sereinement les défis techniques liés à :
+
+\begin{itemize}
+\setlength\itemsep{-0.8em}
+\item La mise en place de systèmes de gestion des accès sécurisés
+\item L'optimisation des performances et la scalabilité des plateformes
+\item L'automatisation des déploiements et la maintenance des infrastructures
+\end{itemize}
+
+Je suis convaincu que mon expertise technique, ma compréhension des enjeux de la santé numérique et ma capacité à diriger des projets complexes seraient des atouts précieux pour votre équipe. Je serais ravi de pouvoir échanger avec vous sur ma vision pour le développement futur de SORMAS.
 
 %\lettersection{Why Me?}
 

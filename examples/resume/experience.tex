@@ -6,20 +6,30 @@
 \newcommand*{\logo}[2]{\raisebox{-0.2em}{\includegraphics[height=1em]{#2}}\hspace{0.25em}#1}
 \newcommand*{\logoonly}[1]{\raisebox{-0.2em}{\includegraphics[height=1em]{#1}}}
 
+\tcbset{on line,
+    boxrule=0pt, boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+    colframe=white,colback={lightgray!15}
+}
+
+\newcommand*{\tagx}[1]{
+    \tcbox{\color{graytext}#1}
+}
+
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
     \cventry
-    {scala$\sqbig$play$\sqbig$mongodb$\sqbig$api$\sqbig$cqrs$\sqbig$angularjs}
-    {\logo{Groupe Foyer}{../../../images/foyer.png}\,|\,Scala engineer}
+    {\tagx{scala} \tagx{play} \tagx{mongodb} \tagx{api} \tagx{cqrs} \tagx{angularjs}}
+    {\logo{Groupe Foyer}{../../../images/foyer.png}$\sqbig$scala engineer}
     {Luxembourg}
     {Oct 2024 - present}
-    {At Foyer, Luxembourg's Largest Insurer, I design and develop backend APIs using Scala, Kafka, and CQRS, with a strong focus on code quality, scalability, and maintainability. Lead key backend initiatives and advocate for technical excellence across the team.}
+    {}
+%    {At Foyer, Luxembourg's Largest Insurer, I design and develop backend APIs using Scala, Kafka, and CQRS, with a strong focus on code quality, scalability, and maintainability. Lead key backend initiatives and advocate for technical excellence across the team.}
     {
         \begin{cvitems}
             \item{Developed new APIs leveraging CQRS, Scala, and Kafka to support marketing initiatives.}
-            \item{Championed test-driven development (TDD) and clean code practices; acted as a key voice for engineering best practices within the team.}
+            \item{Championed test-driven development (TDD) and clean code practices; acted as a key voice for engineering best practices.}
             \item{Modernized legacy systems by migrating REST APIs to contemporary architectures using CQRS and event sourcing patterns.}
             \item{Led technical design and implementation of integrations with third-party tax assessment providers.}
         \end{cvitems}
@@ -29,31 +39,33 @@
 
 
     \cventry
-    {scala$\sqbig$http4s$\sqbig$go$\sqbig$api$\sqbig$openid$\sqbig$opentelemetry$\sqbig$sso$\sqbig$databricks}
-    {\logo{Disney streaming}{../../../images/disney.png}\,|\,Scala engineer}
+    {\tagx{scala} \tagx{http4s} \tagx{go} \tagx{api} \tagx{openid} \tagx{opentelemetry} \tagx{sso} \tagx{databricks}}
+    {\logo{Disney streaming}{../../../images/disney.png}$\sqbig$scala engineer}
     {Luxembourg}
     {Oct 2022 - Sept 2024}
-    {Designed and implemented SSO and OpenID Connect architectures to optimize authentication flows across platforms and devices. Led performance and scalability enhancements in Identity Provider (IdP) systems.}
+    {}
+    %{Designed and implemented SSO and OpenID Connect architectures to optimize authentication flows across platforms and devices. Led performance and scalability enhancements in Identity Provider (IdP) systems.}
     {
         \begin{cvitems}
             \item{Architected and deployed Single Sign-On using OpenID Connect, streamlining user authentication and reducing login friction.}
             \item{Engineered performance improvements in IdP services, scaling user account handling from 350M to 800M with zero downtime.}
-            \item{Collaborated with cross-functional teams: security, mobile, web, to integrate authentication components seamlessly into client-facing applications.}
+            \item{Collaborated with cross-functional teams: security, mobile, web, to integrate authentication components.}
             \item{Integrated GlobalProtect VPN support for Linux users using Go.}
         \end{cvitems}
     }
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$etl$\sqbig$kafka-streams$\sqbig$ksql$\sqbig$spark}
-    {\logo{Depop}{../../../images/depop.jpg} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{kafka-streams} \tagx{ksql} \tagx{spark}}
+    {\logo{Depop}{../../../images/depop.jpg}$\sqbig$scala\,|\,data engineer}
     {Luxembourg}
     {Mar 2022 - Sept 2022}
-    {At Depop, the leading second-hand marketplace for emerging fashion designers in the UK and US, I was re-engaged to drive the design and implementation of streaming data strategies and real-time APIs, ensuring seamless integration with mobile applications.}
+    {}
+    %{At Depop, the leading second-hand marketplace for emerging fashion designers in the UK and US, I was re-engaged to drive the design and implementation of streaming data strategies and real-time APIs, ensuring seamless integration with mobile applications.}
     {
         \begin{cvitems}
-            \item{Led the creation of enriched, unified datasets by overseeing the use of KSQL, Kafka Streams, and Spark Streaming pipelines to streamline data processing.}
-            \item{Directed the architecture of materialized streamed datasets with sub-15-minute views (delta tables) for OLAP queries, leveraging DBT, Spark, and Databricks to optimize data retrieval and analytical capabilities.}
+            \item{Led the creation of enriched, unified datasets by overseeing the use of KSQL, Kafka Streams, and Spark Streaming pipelines.}
+            \item{Directed the architecture of materialized streamed datasets with sub-15-minute views (delta tables) for OLAP queries, leveraging DBT, Spark, and Databricks.}
             \item{Managed the enhancement of safety, reliability, and observability across deployment pipelines and applications, ensuring robust system performance and operational efficiency.}
         \end{cvitems}
     }
@@ -61,11 +73,12 @@
 %---------------------------------------------------------
 
     \cventry
-    {scala$\sqbig$java$\sqbig$api$\sqbig$etl$\sqbig$grpc$\sqbig$akka-streams$\sqbig$websockets$\sqbig$iot}
-    {\logo{Zego}{../../../images/zego.jpg} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{api} \tagx{grpc} \tagx{akka-streams} \tagx{websockets} \tagx{iot}}
+    {\logo{Zego}{../../../images/zego.jpg}$\sqbig$scala\,|\,data engineer}
     {Luxembourg}
     {Nov 2021 - Aug 2022}
-    {At Zego, an innovative driver insurance company disrupting the market with on-demand coverage, I led the design and deployment of Flink and Akka Streams-based ingestion processors, incorporating machine learning models to assess risk levels and coverage appetite.}
+    {}
+    %{At Zego, an innovative driver insurance company disrupting the market with on-demand coverage, I led the design and deployment of Flink and Akka Streams-based ingestion processors, incorporating machine learning models to assess risk levels and coverage appetite.}
     {
         \begin{cvitems}
             \item{Integrated third-party vehicle (IoT) and insurance data via REST APIs, gRPC, and WebSockets, utilizing Kinesis and Akka Streams for seamless data processing.}
@@ -78,11 +91,12 @@
 %---------------------------------------------------------
 
     \cventry
-    {scala$\sqbig$java$\sqbig$etl$\sqbig$ksql$\sqbig$kafka-streams$\sqbig$confluent}
-    {\logo{Slice}{../../../images/slice.png} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{ksql} \tagx{kafka-streams} \tagx{confluent}}
+    {\logo{Slice}{../../../images/slice.png}$\sqbig$scala\,|\,data engineer}
     {Luxembourg}
     {Apr 2021 - Oct 2021}
-    {At Slice, a company empowering independent pizza vendors to grow their online presence, I led the architecture and implementation of streaming pipelines to provide real-time sales and revenue feedback to vendors.}
+    {}
+    %{At Slice, a company empowering independent pizza vendors to grow their online presence, I led the architecture and implementation of streaming pipelines to provide real-time sales and revenue feedback to vendors.}
     {
         \begin{cvitems}
             \item{Led the migration to a high-throughput, stream-oriented data processing architecture, enhancing data handling capabilities.}
@@ -93,11 +107,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$api$\sqbig$etl$\sqbig$emr$\sqbig$spring boot$\sqbig$kafka-streams}
-    {\logo{Compare The Market}{../../../images/ctm.png} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{api} \tagx{emr} \tagx{spring boot} \tagx{kafka-streams}}
+    {\logo{Compare The Market}{../../../images/ctm.png}$\sqbig$scala\,|\,data engineer}
     {London}
     {Jan 2020 - Mar 2021}
-    {At Compare The Market, a leading comparison platform aggregating insurance quotes, I was brought in to optimize Kafka clusters and stream processors, as well as develop systems for ingesting and providing real-time pricing data from third-party feeds.}
+    {}
+    %{At Compare The Market, a leading comparison platform aggregating insurance quotes, I was brought in to optimize Kafka clusters and stream processors, as well as develop systems for ingesting and providing real-time pricing data from third-party feeds.}
     {
         \begin{cvitems}
             \item{Designed ETL CI/CD pipelines for streaming data flows using Spring Boot, Kafka Streams, Akka Streams, and Spark Streaming.}
@@ -108,11 +123,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$etl$\sqbig$kafka-streams$\sqbig$ksql$\sqbig$redshift$\sqbig$rabbitmq}
-    {\logo{Depop}{../../../images/depop.jpg} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{kafka-streams} \tagx{ksql} \tagx{redshift} \tagx{rabbitmq}}
+    {\logo{Depop}{../../../images/depop.jpg}$\sqbig$scala\,|\,data engineer}
     {London}
     {June 2019 - Dec 2019}
-    {At Depop, I led the data engineering team in implementing streaming data pipelines to ensure real-time synchronization of a Redshift cluster, driving data consistency and operational efficiency.}
+    {}
+    %{At Depop, I led the data engineering team in implementing streaming data pipelines to ensure real-time synchronization of a Redshift cluster, driving data consistency and operational efficiency.}
     {
         \begin{cvitems}
             \item{Directed the design and deployment of AWS Redshift and RabbitMQ data ingestion pipelines, utilizing Kinesis and Akka Streams to streamline data processing.}
@@ -123,11 +139,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$api$\sqbig$etl$\sqbig$emr$\sqbig$kafka-streams}
-    {\logo{The Guardian}{../../../images/guardian.png} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{api} \tagx{emr} \tagx{kafka-streams}}
+    {\logo{The Guardian}{../../../images/guardian.png}$\sqbig$scala\,|\,data engineer}
     {London}
     {Oct 2018 - May 2019}
-    {At The Guardian, a leading UK newspaper, I designed and implemented systems capable of handling hundreds of millions of events, ingesting data from Kinesis streams into Elasticsearch via Logstash, and utilizing Kibana for monitoring and observability. I also led the design and deployment of Spark Streaming processors to extract real-time insights.}
+    {}
+    %{At The Guardian, a leading UK newspaper, I designed and implemented systems capable of handling hundreds of millions of events, ingesting data from Kinesis streams into Elasticsearch via Logstash, and utilizing Kibana for monitoring and observability. I also led the design and deployment of Spark Streaming processors to extract real-time insights.}
     {
         \begin{cvitems}
             \item{Developed and implemented Spark ETL pipelines on AWS EMR, processing reader revenue and subscription datasets to drive data-driven decision-making.}
@@ -138,11 +155,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$etl$\sqbig$kafka-streams$\sqbig$cloudera$\sqbig$kerberos$\sqbig$hive}
-    {\logo{Sainsbury's}{../../../images/sainsburys.jpg} - Scala\,|\,Data engineer}
+    {\tagx{scala} \tagx{java} \tagx{etl} \tagx{cloudera} \tagx{kerberos} \tagx{hive} \tagx{kafka-streams}}
+    {\logo{Sainsbury's}{../../../images/sainsburys.jpg}$\sqbig$scala\,|\,data engineer}
     {London}
     {Dec 2017 - Sep 2018}
-    {At Sainsbury’s, the largest supermarket chain in the UK, I designed the architecture and developed the platform and pipelines to enhance the loyalty program, enabling real-time rewards and refunds for customers.}
+    {}
+    %{At Sainsbury’s, the largest supermarket chain in the UK, I designed the architecture and developed the platform and pipelines to enhance the loyalty program, enabling real-time rewards and refunds for customers.}
     {
         \begin{cvitems}
             \item{Replaced batch-based Nectar card data processing with a streaming pipeline, reducing data processing time to under 4 seconds.}
@@ -154,11 +172,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$akka$\sqbig$api$\sqbig$etl$\sqbig$spring boot$\sqbig$akka-streams}
-    {\logo{Home Office (HMPO \& IPT)}{../../../images/ho.png} - Scala engineer}
+    {\tagx{scala} \tagx{java} \tagx{akka} \tagx{api} \tagx{etl} \tagx{spring boot} \tagx{akka-streams}}
+    {\logo{Home Office (HMPO \& IPT)}{../../../images/ho.png}$\sqbig$scala engineer}
     {London}
     {June 2016 - Nov 2017}
-    {At HMPO and IPT, government bodies responsible for border security and immigration policies, I worked on sensitive areas such as asylum claims and passport issuance. I implemented secure systems where data security, auditability, and accountability were crucial to the integrity of the processes I designed.}
+    {}
+    %{At HMPO and IPT, government bodies responsible for border security and immigration policies, I worked on sensitive areas such as asylum claims and passport issuance. I implemented secure systems where data security, auditability, and accountability were crucial to the integrity of the processes I designed.}
     {
         \begin{cvitems}
             \item{Led the development of HMPO’s online passport renewal portal, including the design of data ingestion processes to ensure efficient and secure handling.}
@@ -169,11 +188,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$akka$\sqbig$fullstack$\sqbig$play$\sqbig$etl}
-    {\logo{HMRC (Valuation Office Agency)}{../../../images/voa.png} - Scala engineer}
+    {\tagx{scala} \tagx{java} \tagx{akka} \tagx{fullstack} \tagx{etl} \tagx{fullstack}}
+    {\logo{HMRC (Valuation Office Agency)}{../../../images/voa.png}$\sqbig$scala engineer}
     {London}
     {Nov 2015 - May 2016}
-    {At the VOA, a government agency responsible for setting and enforcing tax rates for private and business properties across the UK, I led the redesign of the UI and data input processing, integrating data flows with legacy back-end systems.}
+    {}
+    %{At the VOA, a government agency responsible for setting and enforcing tax rates for private and business properties across the UK, I led the redesign of the UI and data input processing, integrating data flows with legacy back-end systems.}
     {
         \begin{cvitems}
             \item{Designed and implemented an Akka wrapper around a legacy web application using Akka Streams, presenting the proposed design to stakeholders for approval.}
@@ -183,11 +203,12 @@
 
 %---------------------------------------------------------
     \cventry
-    {scala$\sqbig$java$\sqbig$akka$\sqbig$play$\sqbig$rabbitmq}
-    {\logo{Home Office (Border Force)}{../../../images/ho.png} - Java$\sqbig$Scala engineer}
+    {\tagx{scala} \tagx{java} \tagx{akka} \tagx{play} \tagx{rabbitmq}}
+    {\logo{Home Office (Border Force)}{../../../images/ho.png}$\sqbig$java\,|\,scala engineer}
     {London}
     {Mar 2014 - Oct 2015}
-    {Border Force is a government agency responsible for securing the UK borders. I created a real-time flight arrival prediction system to forecast airport queue times and staff requirements at the gates.}
+    {}
+    %{Border Force is a government agency responsible for securing the UK borders. I created a real-time flight arrival prediction system to forecast airport queue times and staff requirements at the gates.}
     {
         \begin{cvitems}
             \item{Built a flight arrival prediction engine and incorporated resiliency and recovery processes using Akka and RabbitMQ.}

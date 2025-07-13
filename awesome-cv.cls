@@ -765,7 +765,7 @@
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \begin{minipage}{17cm}
-    \vspace{-0.5em}
+    \vspace{0.5em}
     \begin{justify}
       \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
         \setlength{\parskip}{0pt}

@@ -25,7 +25,6 @@
 \NeedsTeXFormat{LaTeX2e}
 
 
-
 %-------------------------------------------------------------------------------
 %                Class options
 %
@@ -135,7 +134,7 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 % Text colors
-\definecolor{darktext}{HTML}{333333}
+\definecolor{darktext}{HTML}{414141}
 \colorlet{text}{darkgray}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
@@ -670,7 +669,7 @@
   \vspace{\acvSectionContentTopSkip}
   \vspace{-3mm}
   \paragraphstyle
-  }{%
+}{%
   \par
   \vspace{2mm}
 }
@@ -679,7 +678,7 @@
 \newenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
   \begin{center}
-  }{%
+}{%
   \end{center}
 }
 % Define an entry of cv information
@@ -705,7 +704,7 @@
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
-  }{%
+}{%
   \end{center}
 }
 % Define a subentry of cv information
@@ -731,11 +730,11 @@
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
   \begin{center}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
-    }{%
-    \end{tabular*}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+}{%
+  \end{tabular*}
   \end{center}
 }
 % Define a line of cv information(honor, award or something else)
@@ -749,11 +748,11 @@
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2.0mm}
   \begin{center}
-    \setlength\tabcolsep{1ex}
-    \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
-    }{%
-    \end{tabular*}
+  \setlength\tabcolsep{1ex}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+}{%
+  \end{tabular*}
   \end{center}
 }
 % Define a line of cv information(skill)
@@ -764,19 +763,17 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \begin{minipage}{17cm}
-    \vspace{0.5em}
-    \begin{justify}
-      \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-        \setlength{\parskip}{0pt}
-        \renewcommand{\labelitemi}{\bullet}
-        }{%
-      \end{itemize}
-    \end{justify}
-
-    \vspace{1.8em}
-  \end{minipage}
+  \vspace{-4.0mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \setlength{\parskip}{0pt}
+  \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+  \vspace{1.0mm}
 }
+
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
@@ -784,7 +781,7 @@
 % Define an environment for cvletter
 \newenvironment{cvletter}{%
   \lettertextstyle
-  }{%
+}{%
 }
 
 % Define a section for the cover letter

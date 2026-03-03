@@ -44,9 +44,8 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand*\sq{\mathbin{\vcenter{\hbox{\rule{.3ex}{.3ex}}}}}
-\newcommand{\company}{Ministère de la Santé et de la Sécurité sociale}
-\newcommand{\positionname}{développeur Full Stack (réf. E00033585)}
-
+\newcommand{\company}{Ministère de la Digitalisation}
+\newcommand{\positionname}{Data Engineer (m/f) (réf. E00039157)}
 
 
 %-------------------------------------------------------------------------------
@@ -57,14 +56,14 @@
 %\photo[circle,noedge,left]{./examples/profile}
 \name{Romain}{GALLET}
 \position{software architecture $\sq$ data engineering $\sq$ devops $\sq$ aws certified}
-\address{Luxembourg}
+\address{57 rue des champs, Bertrange, L-8053, Luxembourg}
 
 \mobile{(+352) 661 54 72 73}
-\email{romain.gallet@gmail.com}
+\email{romain@gallet.cloud}
 %\dateofbirth{January 1st, 1970}
 %\homepage{www.posquit0.com}
-\github{grumlimited}
-\linkedin{romaingallet}
+%\github{grumlimited}
+%\linkedin{romaingallet}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -87,16 +86,16 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {\company}
-  {Direction de la santé}
+{\company}
+{Centre des technologies de l'information de l'État}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Candidature pour le poste de \positionname}
+\lettertitle{Candidature au poste de \positionname}
 % How the letter is opened
-\letteropening{Madame Dr Anne VERGISON,}
+\letteropening{Madame, Monsieur,}
 % How the letter is closed
-\letterclosing{Je vous prie d’agréer, Madame, l’expression de mes salutations distinguées.}
+\letterclosing{Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.}
 % Any enclosures with the letter
 %\letterenclosure[Attached]{Curriculum Vitae}
 
@@ -106,74 +105,45 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[R]
+    \makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Romain GALLET~~~·~~~Lettre de motivation}
-  {}
+    \makecvfooter
+    {\today}
+    {Romain GALLET~~~·~~~Lettre de motivation}
+    {}
 
 % Print the title with above letter information
-\makelettertitle
+    \makelettertitle
 
 %-------------------------------------------------------------------------------
 %	LETTER CONTENT
 %-------------------------------------------------------------------------------
-\begin{cvletter}
+    \begin{cvletter}
 
-%\lettersection{About Me}
+        Fort de plus de quinze ans d'expérience en ingénierie et en architecture de données, je me permets de vous soumettre ma candidature pour le poste de {\positionname}.
 
-Je me permets de vous adresser ma candidature pour le poste de développeur full stack au sein du projet PHRESH . Fort de plus de 15 ans d'expérience en tant que consultant Big Data et architecte de solutions,
-je suis convaincu que mon expertise technique approfondie et ma capacité à concevoir des systèmes complexes seraient des atouts précieux pour votre projet.
+        Mon profil d'expert technique, spécialisé dans la conception et la gestion de plateformes de données robustes et évolutives, correspond parfaitement aux missions stratégiques que vous décrivez.
 
-Mon parcours professionnel, notamment chez Disney Streaming où j'ai conçu des systèmes d'authentification capables de gérer plus de 800 millions d'utilisateurs, démontre ma capacité à développer des solutions
-robustes et hautement évolutives. Cette expérience s'aligne parfaitement avec les exigences techniques de SORMAS en matière de gestion de données sensibles et de systèmes de surveillance épidémiologique.
+        Mon parcours m'a permis de développer une expertise approfondie sur l'ensemble du cycle de vie des données.
+        Je conçois, déploie et optimise des architectures innovantes et des data pipelines en m'appuyant sur des technologies clés telles que Apache Airflow, Apache Spark, Apache Kafka et Kafka Streams.
 
-Mes compétences techniques correspondent précisément à vos besoins :
+        Au-delà de la dimension technique, je participe, dans mes rôles, à la gouvernance des données et à la définition de stratégies des data lakes, ce qui rejoint directement votre besoin de fédération et de gestion d'un référentiel unique de données.
 
-\begin{itemize}
-\setlength\itemsep{-0.8em}
-\item Maîtrise approfondie de Java et des technologies Java EE (EJB, JPA/Hibernate, JAXRS)
-\item Expertise en développement frontend avec HTML, CSS et JavaScript
-\item Expérience significative avec les bases de données relationnelles, notamment PostgreSQL
-\item Solide expérience en architecture REST et protocoles http/https
-\item Pratique quotidienne des environnements Unix et des technologies de conteneurisation (Docker)
-\item Expertise en déploiement et maintenance de serveurs d'applications Java
-\end{itemize}
+        Mes rôles récents en tant que staff engineer, où je promeus les bonnes pratiques de développement (TDD, clean code) et suis référent technique, démontrent mon appétit pour le mentorat, à la formation et à la conduite du changement transverse à plusieurs équipes.
+        Cette expérience est essentielle pour accompagner mes collaborateurs et assurer l'exploitation optimale des plateformes.
 
-Mon expérience dans la gestion de données sensibles, notamment au Home Office britannique, m'a permis de développer une compréhension approfondie des enjeux de sécurité et de confidentialité des données. J'ai régulièrement mis en œuvre des solutions conformes au RGPD et aux standards de sécurité les plus stricts.
+        Par ailleurs, je suis constamment en veille active pour intégrer les dernières avancées, notamment en contribuant à des designs systèmes cross-fonctionnels et en évaluant des opportunités d'optimisation.
 
-Je suis particulièrement intéressé par les aspects suivants du poste :
+        Je suis convaincu que mon expertise en ingénierie des données, combinée à mes compétences en leadership technique, me permettront de contribuer efficacement à la transformation numérique de l'État luxembourgeois.
 
-
-\begin{itemize}
-\setlength\itemsep{-0.8em}
-\item L'intégration de systèmes complexes et l'automatisation des flux de données
-\item La mise en place d'architectures évolutives pour la gestion des épidémies
-\item Le développement d'interfaces utilisateur intuitives pour les professionnels de santé
-\item L'implémentation de mécanismes de partage de données sécurisés entre différents secteurs
-\end{itemize}
-
-Ma certification AWS et mon expérience en conception de systèmes hautement disponibles me permettront d'aborder sereinement les défis techniques liés à :
-
-\begin{itemize}
-\setlength\itemsep{-0.8em}
-\item La mise en place de systèmes de gestion des accès sécurisés
-\item L'optimisation des performances et la scalabilité des plateformes
-\item L'automatisation des déploiements et la maintenance des infrastructures
-\end{itemize}
-
-Je suis convaincu que mon expertise technique, ma compréhension des enjeux de la santé numérique et ma capacité à diriger des projets complexes seraient des atouts précieux pour votre équipe. Je serais ravi de pouvoir échanger avec vous sur ma vision pour le développement futur de SORMAS.
-
-%\lettersection{Why Me?}
-
-\end{cvletter}
+        Je suis impatient de pouvoir discuter avec vous de la manière dont mon expérience pourrait bénéficier au CTIE. Je reste à votre disposition pour un entretien à votre convenance.
+    \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter information
-\makeletterclosing
+    \makeletterclosing
 
 \end{document}
